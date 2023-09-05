@@ -9,6 +9,11 @@
 
 <body>
     <div class="fundo">
+
+        <div>
+            <h1>Uma Calculadora Bonitinha</h1>
+        </div>
+
         <div class="calculadora">
             <form>
                 <div class="display">
@@ -17,8 +22,8 @@
                 <div>
                     <input type="button" value="AC" onclick="tela.value = ''">
                     <input type="button" value="Del" onclick="tela.value = tela.value.toString().slice(0,-1)">
-                    <input type="button" value="." onclick="tela.value = '.'">
-                    <input type="button" value="/" onclick="tela.value = '/'">
+                    <input type="button" value="." onclick="tela.value += '.'">
+                    <input type="button" value="/" onclick="tela.value += '/'">
                 </div>
                 <div>
                     <input type="button" value="7" onclick="tela.value += '7'">
